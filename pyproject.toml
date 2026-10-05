@@ -8,10 +8,14 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "fastapi>=0.142.2",
+    "httpx2>=2.13.1",
     "pre-commit>=4.6.2",
     "pydantic-settings>=2.15.0",
+    "pytest>=9.1.1",
     "python-dotenv>=1.2.4",
     "pyyaml>=6.0.3",
+    "uvicorn>=0.54.0",
 ]
 
 [project.scripts]
@@ -20,3 +24,6 @@ mlops-course = "mlops_course:main"
 [build-system]
 requires = ["uv_build>=0.12.17,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
