@@ -7,7 +7,9 @@ authors = [
     { name = "jgrzes", email = "kuba.grzes@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pre-commit>=4.6.2",
+]
 
 [project.scripts]
 mlops-course = "mlops_course:main"
