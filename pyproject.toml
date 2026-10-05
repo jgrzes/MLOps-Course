@@ -25,5 +25,8 @@ mlops-course = "mlops_course:main"
 requires = ["uv_build>=0.12.17,<0.13.0"]
 build-backend = "uv_build"
 
+[pytest]
+env_files = "./config/.env.test"
+
 [tool.pytest.ini_options]
 pythonpath = ["."]
